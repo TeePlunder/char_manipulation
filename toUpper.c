@@ -1,9 +1,9 @@
 #include <stdio.h>
-void toLower(char *toChangeChar) { *toChangeChar = *toChangeChar & (~0x20); }
+void toUpper(char *toChangeChar) { *toChangeChar = *toChangeChar & (~0x20); }
 
 int main() {
   char toTest = 'a';
-  toLower(&toTest);
+  toUpper(&toTest);
   printf("-> %c\n", toTest);
   return 0;
 }
